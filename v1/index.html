@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tansel Kılıç — AI & Digital Transformation Executive</title>
+  <meta name="description" content="Technology executive with 20+ years of experience. AI & LLM transformation, fintech, engineering leadership. Based in Istanbul." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #f8fafc;
+      --bg2:      #f1f5f9;
+      --surface:  #ffffff;
+      --card:     #ffffff;
+      --border:   rgba(100,116,139,.13);
+      --accent:   #2563eb;
+      --accent2:  #7c3aed;
+      --green:    #16a34a;
+      --text:     #0f172a;
+      --muted:    #64748b;
+      --dim:      #94a3b8;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0 6vw; height: 62px;
+      background: rgba(255,255,255,.96);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(37,99,235,.12);
+      box-shadow: 0 1px 16px rgba(15,23,42,.07);
+    }
+    nav::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--accent) 0%, var(--accent2) 100%);
+    }
+    .nav-logo {
+      font-size: 16px; font-weight: 700; letter-spacing: .02em; color: var(--text);
+    }
+    .nav-logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 30px; list-style: none; }
+    .nav-links a {
+      color: var(--muted); text-decoration: none;
+      font-size: 13.5px; font-weight: 500; letter-spacing: .02em;
+      transition: color .2s; position: relative; padding-bottom: 2px;
+    }
+    .nav-links a::after {
+      content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 2px;
+      background: var(--accent); border-radius: 2px;
+      transform: scaleX(0); transition: transform .2s;
+    }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-links a:hover::after { transform: scaleX(1); }
+
+    /* ─── HERO ─── */
+    .hero {
+      min-height: 100vh; display: flex; align-items: center;
+      padding: 110px 6vw 90px; position: relative; overflow: hidden;
+      background: linear-gradient(160deg, #eef4ff 0%, #f0f4ff 30%, #f8fafc 65%, #ffffff 100%);
+    }
+    .hero::after {
+      content: '';
+      position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent 0%, rgba(37,99,235,.18) 30%, rgba(124,58,237,.15) 70%, transparent 100%);
+    }
+    .hero-grid {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(37,99,235,.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(37,99,235,.07) 1px, transparent 1px);
+      background-size: 52px 52px;
+      mask-image: radial-gradient(ellipse 85% 80% at 50% 40%, black 10%, transparent 80%);
+    }
+    .hero-glow {
+      position: absolute; inset: 0; pointer-events: none;
+      background:
+        radial-gradient(ellipse 70% 55% at 60% 35%, rgba(37,99,235,.1) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 45% at 10% 70%, rgba(124,58,237,.08) 0%, transparent 55%);
+    }
+    .hero-shape {
+      position: absolute; top: -120px; right: -120px;
+      width: 520px; height: 520px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(37,99,235,.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-content { position: relative; max-width: 740px; }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(37,99,235,.07); border: 1px solid rgba(37,99,235,.2);
+      border-radius: 20px; padding: 5px 14px;
+      font-size: 11.5px; font-weight: 600; color: var(--accent);
+      letter-spacing: .06em; text-transform: uppercase; margin-bottom: 22px;
+    }
+    .hero-badge .dot {
+      width: 6px; height: 6px; background: var(--green);
+      border-radius: 50%; box-shadow: 0 0 8px var(--green);
+      animation: blink 2s ease-in-out infinite;
+    }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.25} }
+
+    h1 {
+      font-size: clamp(38px, 5.5vw, 68px);
+      font-weight: 700; letter-spacing: -.025em; line-height: 1.08; margin-bottom: 10px;
+    }
+    .gradient-text {
+      background: linear-gradient(130deg, #0f172a 0%, var(--accent) 55%, var(--accent2) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .hero-sub {
+      font-size: clamp(15px, 2vw, 19px); color: var(--muted);
+      font-weight: 400; margin-bottom: 20px;
+    }
+    .hero-desc {
+      font-size: 15.5px; color: #475569; max-width: 540px;
+      margin-bottom: 38px; line-height: 1.8;
+    }
+    .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 11px 22px; border-radius: 8px;
+      font-size: 14px; font-weight: 600; text-decoration: none;
+      transition: all .2s; cursor: pointer; border: none;
+    }
+    .btn-primary { background: var(--accent); color: #ffffff; }
+    .btn-primary:hover { background: #1d4ed8; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(37,99,235,.22); }
+    .btn-outline { background: transparent; color: var(--text); border: 1px solid var(--border); }
+    .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+
+    /* ─── STATS BAR ─── */
+    .stats-bar {
+      background: #ffffff;
+      border-top: 1px solid rgba(37,99,235,.1);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 4px 20px rgba(15,23,42,.05);
+      padding: 30px 6vw;
+    }
+    .stats-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(4,1fr);
+      gap: 20px; text-align: center;
+    }
+    .stat-num { font-size: 34px; font-weight: 700; color: var(--accent); letter-spacing: -.02em; }
+    .stat-label { font-size: 13px; color: var(--muted); margin-top: 3px; }
+
+    /* ─── SECTIONS ─── */
+    section { padding: 80px 6vw; max-width: 1100px; margin: 0 auto; }
+    .section-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11.5px; color: var(--accent);
+      letter-spacing: .12em; text-transform: uppercase; margin-bottom: 10px;
+    }
+    h2 {
+      font-size: clamp(24px, 3vw, 38px);
+      font-weight: 700; letter-spacing: -.02em; margin-bottom: 12px;
+    }
+    .section-divider {
+      height: 1px; background: linear-gradient(90deg, var(--border) 0%, transparent 80%);
+      margin-bottom: 44px;
+    }
+
+    /* ─── FOCUS CARDS ─── */
+    .cards-3 {
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 18px;
+    }
+    .focus-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 26px;
+      box-shadow: 0 1px 4px rgba(15,23,42,.05);
+      transition: border-color .25s, transform .25s, box-shadow .25s;
+    }
+    .focus-card:hover { border-color: rgba(37,99,235,.35); transform: translateY(-3px); box-shadow: 0 8px 32px rgba(37,99,235,.08); }
+    .card-icon {
+      width: 42px; height: 42px; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 19px; margin-bottom: 14px;
+    }
+    .icon-blue   { background: rgba(37,99,235,.1); }
+    .icon-purple { background: rgba(124,58,237,.1); }
+    .icon-teal   { background: rgba(13,148,136,.1); }
+    .card-title  { font-size: 15.5px; font-weight: 600; margin-bottom: 9px; }
+    .card-body   { font-size: 13.5px; color: var(--muted); line-height: 1.75; }
+
+    /* ─── AI PROJECTS ─── */
+    .ai-projects { display: flex; flex-direction: column; gap: 18px; }
+    .ai-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 26px 30px;
+      display: grid; grid-template-columns: 36px 1fr; gap: 18px; align-items: start;
+      box-shadow: 0 1px 4px rgba(15,23,42,.05);
+      transition: border-color .25s, transform .2s, box-shadow .2s;
+    }
+    .ai-card:hover { border-color: rgba(37,99,235,.3); transform: translateY(-2px); }
+    .ai-card-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px; color: var(--accent); padding-top: 4px;
+    }
+    .ai-card-title { font-size: 16px; font-weight: 600; margin-bottom: 8px; }
+    .ai-card-body  { font-size: 13.5px; color: var(--muted); line-height: 1.75; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 14px; }
+    .tag {
+      font-size: 11.5px; font-weight: 500; padding: 4px 10px;
+      border-radius: 5px; background: rgba(37,99,235,.07);
+      border: 1px solid rgba(37,99,235,.18); color: var(--accent);
+    }
+    .tag.purple {
+      background: rgba(124,58,237,.07); border-color: rgba(124,58,237,.18); color: var(--accent2);
+    }
+
+    /* ─── TIMELINE ─── */
+    .timeline { position: relative; }
+    .timeline::before {
+      content: ''; position: absolute; left: 0; top: 8px; bottom: 8px; width: 1px;
+      background: linear-gradient(180deg, var(--accent) 0%, var(--accent2) 50%, transparent 100%);
+      opacity: .28;
+    }
+    .tl-item { padding-left: 30px; padding-bottom: 42px; position: relative; }
+    .tl-item:last-child { padding-bottom: 0; }
+    .tl-dot {
+      position: absolute; left: -5px; top: 7px;
+      width: 11px; height: 11px; border-radius: 50%;
+      background: var(--accent); border: 2px solid var(--bg);
+      box-shadow: 0 0 8px rgba(37,99,235,.3);
+    }
+    .tl-dot.current {
+      background: var(--green); box-shadow: 0 0 8px rgba(22,163,74,.35);
+    }
+    .tl-meta {
+      display: flex; flex-wrap: wrap; align-items: baseline;
+      gap: 6px 14px; margin-bottom: 6px;
+    }
+    .tl-company  { font-size: 16.5px; font-weight: 700; color: var(--text); }
+    .tl-role     { font-size: 13.5px; color: var(--accent); font-weight: 500; }
+    .tl-date     {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11.5px; color: var(--dim); margin-left: auto;
+    }
+    .tl-highlights { list-style: none; margin-top: 10px; display: flex; flex-direction: column; gap: 6px; }
+    .tl-highlights li {
+      font-size: 13.5px; color: var(--muted);
+      padding-left: 16px; position: relative;
+    }
+    .tl-highlights li::before { content: '›'; position: absolute; left: 0; color: var(--accent); }
+    .tl-ai-badge {
+      display: inline-flex; align-items: center; gap: 5px;
+      background: rgba(37,99,235,.07); border: 1px solid rgba(37,99,235,.18);
+      border-radius: 5px; padding: 3px 9px;
+      font-size: 11px; font-weight: 600; color: var(--accent);
+      letter-spacing: .05em; margin-top: 10px;
+    }
+
+    /* ─── EDUCATION ─── */
+    .edu-cards { display: flex; flex-direction: column; gap: 14px; }
+    .edu-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; padding: 20px 24px;
+      display: flex; justify-content: space-between; align-items: start; gap: 18px;
+      box-shadow: 0 1px 4px rgba(15,23,42,.05);
+    }
+    .edu-title   { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+    .edu-school  { font-size: 13px; color: var(--muted); }
+    .edu-year    {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11.5px; color: var(--dim); white-space: nowrap; padding-top: 2px;
+    }
+
+    /* ─── SKILLS ─── */
+    .skills-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
+    .skill-group-title {
+      font-size: 12px; font-weight: 600; color: var(--accent);
+      letter-spacing: .06em; text-transform: uppercase; margin-bottom: 11px;
+    }
+    .skill-pills { display: flex; flex-wrap: wrap; gap: 7px; }
+    .pill {
+      font-size: 13px; padding: 5px 12px; border-radius: 6px;
+      background: var(--surface); border: 1px solid var(--border); color: var(--text);
+    }
+
+    /* ─── CONTACT ─── */
+    .contact-wrap {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 18px; padding: 52px 48px; text-align: center;
+      position: relative; overflow: hidden;
+      box-shadow: 0 2px 12px rgba(15,23,42,.07);
+    }
+    .contact-wrap::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(37,99,235,.05) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .contact-title { font-size: 28px; font-weight: 700; margin-bottom: 12px; }
+    .contact-sub {
+      font-size: 15px; color: var(--muted);
+      max-width: 440px; margin: 0 auto 36px; line-height: 1.75;
+    }
+    .contact-links {
+      display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;
+    }
+    .contact-link {
+      display: inline-flex; align-items: center; gap: 9px;
+      padding: 11px 20px; border-radius: 9px; font-size: 13.5px; font-weight: 500;
+      text-decoration: none; background: var(--surface);
+      border: 1px solid var(--border); color: var(--text); transition: all .2s;
+    }
+    .contact-link:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+    .contact-link svg { width: 15px; height: 15px; flex-shrink: 0; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 26px 6vw; text-align: center;
+      font-size: 12px; color: var(--dim);
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 768px) {
+      .cards-3 { grid-template-columns: 1fr; }
+      .stats-inner { grid-template-columns: repeat(2,1fr); }
+      .skills-grid { grid-template-columns: 1fr; }
+      .ai-card { grid-template-columns: 1fr; gap: 4px; }
+      .edu-card { flex-direction: column; }
+      .nav-links { display: none; }
+      section { padding: 60px 5vw; }
+      .contact-wrap { padding: 32px 20px; }
+      .tl-date { margin-left: 0; }
+    }
+
+    /* ─── FADE IN ─── */
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity .5s ease, transform .5s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Technology Leader | AI & Digital Transformation Executive</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#ai">AI Work</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-shape"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><span class="dot"></span>Available for consulting</div>
+    <h1><span class="gradient-text">Tansel Kılıç</span></h1>
+    <p class="hero-sub">AI & Digital Transformation Executive &nbsp;·&nbsp; Ex-CTO &nbsp;·&nbsp; Fractional CTO</p>
+    <p class="hero-desc">
+      I help companies turn AI from an experiment into a production system —
+      improving decisions, automating operations, and delivering at scale.
+      20+ years across fintech, e-commerce &amp; digital ecosystems.
+    </p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary">
+        <svg viewBox="0 0 16 16" width="14" fill="currentColor"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.025L8 9.586l-1.239-.757ZM16 4.697l-5.803 3.546L16 11.801V4.697Z"/></svg>
+        Get in touch
+      </a>
+      <a href="https://www.linkedin.com/in/tanselkilic/" target="_blank" rel="noopener" class="btn btn-outline">
+        <svg viewBox="0 0 24 24" width="14" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="fade-in">
+      <div class="stat-num">20+</div>
+      <div class="stat-label">Years of Experience</div>
+    </div>
+    <div class="fade-in">
+      <div class="stat-num">50+</div>
+      <div class="stat-label">Engineers Led</div>
+    </div>
+    <div class="fade-in">
+      <div class="stat-num">6×</div>
+      <div class="stat-label">CTO / Director Roles</div>
+    </div>
+    <div class="fade-in">
+      <div class="stat-num">LLM</div>
+      <div class="stat-label">Production AI Systems</div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label fade-in">// about</div>
+  <h2 class="fade-in">Where tech meets execution</h2>
+  <div class="section-divider"></div>
+  <div class="cards-3">
+    <div class="focus-card fade-in">
+      <div class="card-icon icon-blue">🤖</div>
+      <div class="card-title">AI & LLM in Production</div>
+      <div class="card-body">I build AI systems that run in the real world — LLM pipelines for document intelligence, NLP-based fraud detection, and AI-native workflows designed with compliance and human oversight from day one.</div>
+    </div>
+    <div class="focus-card fade-in">
+      <div class="card-icon icon-purple">🏗️</div>
+      <div class="card-title">Technology Leadership</div>
+      <div class="card-body">As CTO across multiple companies, I've led engineering organizations of 50+ across backend, frontend, QA, DevOps and infrastructure — aligning technical roadmaps with business outcomes at pace.</div>
+    </div>
+    <div class="focus-card fade-in">
+      <div class="card-icon icon-teal">🔄</div>
+      <div class="card-title">Digital Transformation</div>
+      <div class="card-body">From legacy modernization to cloud-native microservices architectures serving millions of users — I turn transformation initiatives into shipped products, not slide decks.</div>
+    </div>
+  </div>
+</section>
+
+<!-- AI WORK -->
+<section id="ai">
+  <div class="section-label fade-in">// ai work</div>
+  <h2 class="fade-in">AI & LLM initiatives</h2>
+  <p style="color:var(--muted);margin-bottom:40px;max-width:580px;font-size:14.5px" class="fade-in">
+    Selected production AI systems I designed and led — built for measurable business impact, not demos.
+  </p>
+  <div class="section-divider"></div>
+  <div class="ai-projects">
+
+    <div class="ai-card fade-in">
+      <div class="ai-card-num">01</div>
+      <div>
+        <div class="ai-card-title">LLM-based Document Intelligence Platform</div>
+        <div class="ai-card-body">Designed and implemented a local LLM-based system at Ozan Elektronik Para to analyze high-volume incoming financial documents and automatically generate structured action items. Reduced manual review effort significantly while ensuring full data privacy through on-premise model architecture — keeping sensitive financial data off third-party clouds.</div>
+        <div class="tag-row">
+          <span class="tag">Local LLM</span>
+          <span class="tag">Document Processing</span>
+          <span class="tag">On-Premise</span>
+          <span class="tag purple">Fintech</span>
+          <span class="tag purple">Compliance</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-card fade-in">
+      <div class="ai-card-num">02</div>
+      <div>
+        <div class="ai-card-title">FraudInsight — AI-powered Fraud Detection</div>
+        <div class="ai-card-body">Initiated and led development of an AI-driven fraud detection system analyzing transaction data and textual signals using NLP and LLM technologies. Enables real-time identification of suspicious patterns well beyond rule-based systems. Designed a scalable cross-domain architecture targeting fintech, e-commerce, and telecom use cases.</div>
+        <div class="tag-row">
+          <span class="tag">NLP</span>
+          <span class="tag">LLM</span>
+          <span class="tag">Real-time Inference</span>
+          <span class="tag purple">Fraud Detection</span>
+          <span class="tag purple">Cross-domain</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-card fade-in">
+      <div class="ai-card-num">03</div>
+      <div>
+        <div class="ai-card-title">AI-Native Meeting Intelligence — Huudle.io</div>
+        <div class="ai-card-body">Led the full technical architecture of Huudle, an AI-enhanced meeting platform integrating OpenAI API and Whisper for real-time transcription, summarization, and meeting intelligence. Built on a modern serverless stack across AWS, Azure, and Google Cloud serving thousands of users.</div>
+        <div class="tag-row">
+          <span class="tag">OpenAI API</span>
+          <span class="tag">Whisper</span>
+          <span class="tag">Serverless</span>
+          <span class="tag purple">SaaS Product</span>
+          <span class="tag purple">Real-time</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-card fade-in">
+      <div class="ai-card-num">04</div>
+      <div>
+        <div class="ai-card-title">Blockchain & Digital Asset Custody</div>
+        <div class="ai-card-body">Delivered consulting engagements on blockchain infrastructure and digital asset custody with enterprise-grade security. Oversaw mission-critical crypto infrastructure including HSM integrations (Thales, SafeNet) and secure cryptographic protocols (mTLS, PKI).</div>
+        <div class="tag-row">
+          <span class="tag">Blockchain</span>
+          <span class="tag">HSM</span>
+          <span class="tag">PKI / mTLS</span>
+          <span class="tag purple">Enterprise Security</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-label fade-in">// experience</div>
+  <h2 class="fade-in">Career timeline</h2>
+  <div class="section-divider"></div>
+  <div class="timeline">
+
+    <div class="tl-item fade-in">
+      <div class="tl-dot current"></div>
+      <div class="tl-meta">
+        <span class="tl-company">Self-Employed</span>
+        <span class="tl-role">AI & Digital Transformation Executive · Fractional CTO</span>
+        <span class="tl-date">Jan 2026 — Present</span>
+      </div>
+      <ul class="tl-highlights">
+        <li>Advising companies on AI adoption strategies with focus on practical implementation and measurable impact</li>
+        <li>Designing AI-native workflows with strong accuracy standards and human oversight models</li>
+        <li>Consulting on blockchain and digital asset custody with enterprise-grade security requirements</li>
+        <li>Overseeing mission-critical crypto infrastructure — HSM integrations (Thales, SafeNet), mTLS, PKI</li>
+      </ul>
+      <span class="tl-ai-badge">✦ AI Focus</span>
+    </div>
+
+    <div class="tl-item fade-in">
+      <div class="tl-dot"></div>
+      <div class="tl-meta">
+        <span class="tl-company">Ozan Elektronik Para</span>
+        <span class="tl-role">Chief Technology Officer</span>
+        <span class="tl-date">Nov 2024 — Dec 2025</span>
+      </div>
+      <ul class="tl-highlights">
+        <li>Directed end-to-end technology operations and strategy for a leading fintech & digital payments company</li>
+        <li>Led multidisciplinary engineering teams across BE, FE, QA, DevOps and Infrastructure</li>
+        <li>Oversaw Physical POS, Virtual POS (Gateway) and digital wallet product development</li>
+        <li>Cloud-native architectural evolution supporting high-transaction volumes and scalable payment processing</li>
+        <li>Built LLM-based Document Intelligence Platform & FraudInsight AI fraud detection system</li>
+      </ul>
+      <span class="tl-ai-badge">✦ AI Focus</span>
+    </div>
+
+    <div class="tl-item fade-in">
+      <div class="tl-dot"></div>
+      <div class="tl-meta">
+        <span class="tl-company">Saran Group</span>
+        <span class="tl-role">Chief Technology Officer</span>
+        <span class="tl-date">Mar 2024 — Sep 2024</span>
+      </div>
+      <ul class="tl-highlights">
+        <li>Led digital transformation across Tuttur.com, Sonduzluk.com (TJK Betting), Ajansspor.com, RadyoSpor, RadyoTrafik, Saran Digital Studios</li>
+        <li>Defined and implemented IT strategies across diverse media and betting verticals</li>
+      </ul>
+    </div>
+
+    <div class="tl-item fade-in">
+      <div class="tl-dot"></div>
+      <div class="tl-meta">
+        <span class="tl-company">Huudle.io</span>
+        <span class="tl-role">Chief Technology Officer</span>
+        <span class="tl-date">Apr 2023 — Feb 2024</span>
+      </div>
+      <ul class="tl-highlights">
+        <li>Led development of an AI-powered meeting intelligence platform with OpenAI API & Whisper</li>
+        <li>Architected serverless stack on AWS, Azure, Google Cloud, Netlify and Supabase</li>
+        <li>Recruited and scaled engineering teams; ensured security and data privacy compliance</li>
+      </ul>
+      <span class="tl-ai-badge">✦ AI Focus</span>
+    </div>
+
+    <div class="tl-item fade-in">
+      <div class="tl-dot"></div>
+      <div class="tl-meta">
+        <span class="tl-company">Pisano</span>
+        <span class="tl-role">Director of Software Engineering</span>
+        <span class="tl-date">Feb 2022 — Feb 2023</span>
+      </div>
+      <ul class="tl-highlights">
+        <li>Owned IT roadmap, budget and strategy; expanded engineering team 3× in one year</li>
+        <li>Managed full department: Development, DevOps, QA, Integration, PO, BA</li>
+        <li>Developed partnerships with Microsoft, Salesforce and Azure Marketplace</li>
+      </ul>
+    </div>
+
+    <div class="tl-item fade-in">
+      <div class="tl-dot"></div>
+      <div class="tl-meta">
+        <span class="tl-company">Demirören Teknoloji / Azerloterya</span>
+        <span class="tl-role">Director of Software Engineering</span>
+        <span class="tl-date">Jul 2021 — Feb 2022</span>
+      </div>
+      <ul class="tl-highlights">
+        <li>Built 100+ microservices on Azure for the Azerlottery (Azerbaijan) sports betting platform</li>
+        <li>Managed 30–35 engineers on Scrum / Kanban; oversaw Azure DevOps and public cloud deployments</li>
+      </ul>
+    </div>
+
+    <div class="tl-item fade-in">
+      <div class="tl-dot"></div>
+      <div class="tl-meta">
+        <span class="tl-company">Odeon Software & Technology</span>
+        <span class="tl-role">E-commerce Senior Manager</span>
+        <span class="tl-date">Feb 2020 — Jul 2021</span>
+      </div>
+      <ul class="tl-highlights">
+        <li>Led 30–35 engineers across OTI Holding's e-commerce and travel platforms (coral.ru, coraltatil.com, etc.)</li>
+        <li>Drove architecture, scalability, and delivery across multiple concurrent products</li>
+      </ul>
+    </div>
+
+    <div class="tl-item fade-in">
+      <div class="tl-dot"></div>
+      <div class="tl-meta">
+        <span class="tl-company">LC Waikiki</span>
+        <span class="tl-role">E-commerce Software Development Manager</span>
+        <span class="tl-date">Apr 2019 — Feb 2020</span>
+      </div>
+      <ul class="tl-highlights">
+        <li>Led digital and agile transformation for one of Turkey's largest fashion retailers</li>
+      </ul>
+    </div>
+
+    <div class="tl-item fade-in">
+      <div class="tl-dot"></div>
+      <div class="tl-meta">
+        <span class="tl-company">Doğan Holding — Hürriyet / Demirören Gazetecilik</span>
+        <span class="tl-role">Project & Software Development Manager → SDM</span>
+        <span class="tl-date">Sep 2011 — Apr 2019</span>
+      </div>
+      <ul class="tl-highlights">
+        <li>8-year tenure across Turkey's largest media brands: Hürriyet, Bigpara, Mahmure, Posta, Fanatik</li>
+        <li>Drove agile transformation, performance infrastructure, and grew from engineer to senior manager</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label fade-in">// skills & tech</div>
+  <h2 class="fade-in">Technical toolkit</h2>
+  <div class="section-divider"></div>
+  <div class="skills-grid">
+    <div class="fade-in">
+      <div class="skill-group-title">AI & Machine Learning</div>
+      <div class="skill-pills">
+        <span class="pill">LLM Integration</span>
+        <span class="pill">OpenAI API</span>
+        <span class="pill">Whisper</span>
+        <span class="pill">NLP</span>
+        <span class="pill">RAG Systems</span>
+        <span class="pill">Local Models</span>
+        <span class="pill">Prompt Engineering</span>
+      </div>
+    </div>
+    <div class="fade-in">
+      <div class="skill-group-title">Cloud & Infrastructure</div>
+      <div class="skill-pills">
+        <span class="pill">AWS</span>
+        <span class="pill">Azure</span>
+        <span class="pill">Google Cloud</span>
+        <span class="pill">Docker</span>
+        <span class="pill">Kubernetes</span>
+        <span class="pill">Serverless</span>
+        <span class="pill">Azure DevOps</span>
+      </div>
+    </div>
+    <div class="fade-in">
+      <div class="skill-group-title">Architecture & Data</div>
+      <div class="skill-pills">
+        <span class="pill">Microservices</span>
+        <span class="pill">Cloud-Native</span>
+        <span class="pill">Event-Driven</span>
+        <span class="pill">Kafka</span>
+        <span class="pill">Redis</span>
+        <span class="pill">PostgreSQL</span>
+        <span class="pill">MongoDB</span>
+      </div>
+    </div>
+    <div class="fade-in">
+      <div class="skill-group-title">Leadership & Process</div>
+      <div class="skill-pills">
+        <span class="pill">CTO / VP Engineering</span>
+        <span class="pill">Team Scaling</span>
+        <span class="pill">Agile / Scrum</span>
+        <span class="pill">Roadmap Strategy</span>
+        <span class="pill">OKRs</span>
+        <span class="pill">M&A Integration</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-label fade-in">// education</div>
+  <h2 class="fade-in">Academic background</h2>
+  <div class="section-divider"></div>
+  <div class="edu-cards">
+    <div class="edu-card fade-in">
+      <div>
+        <div class="edu-title">MSc in Big Data & Business Analytics</div>
+        <div class="edu-school">ITU — Istanbul Technical University</div>
+      </div>
+      <div class="edu-year">2024 — Present</div>
+    </div>
+    <div class="edu-card fade-in">
+      <div>
+        <div class="edu-title">BSc in Management Information Systems</div>
+        <div class="edu-school">Ahmet Yesevi University</div>
+      </div>
+      <div class="edu-year">2005 — 2009</div>
+    </div>
+    <div class="edu-card fade-in">
+      <div>
+        <div class="edu-title">Associate's Degree — Computer Programming</div>
+        <div class="edu-school">Ondokuz Mayıs University (OMÜ), Samsun</div>
+      </div>
+      <div class="edu-year">1999 — 2001</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="padding-bottom:100px">
+  <div class="contact-wrap fade-in">
+    <div class="section-label" style="justify-content:center;display:flex;margin-bottom:16px">// contact</div>
+    <div class="contact-title">Let's build something meaningful</div>
+    <p class="contact-sub">
+      Open to fractional CTO engagements, AI transformation advisory, and strategic consulting.
+      Based in Istanbul — working globally.
+    </p>
+    <div class="contact-links">
+      <a href="mailto:tanselkilic@gmail.com" class="contact-link">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.025L8 9.586l-1.239-.757ZM16 4.697l-5.803 3.546L16 11.801V4.697Z"/></svg>
+        tanselkilic@gmail.com
+      </a>
+      <a href="https://www.linkedin.com/in/tanselkilic/" target="_blank" rel="noopener" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn Profile
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Tansel Kılıç &nbsp;·&nbsp; Istanbul, Turkey</footer>
+
+<script>
+  const io = new IntersectionObserver(
+    es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+    { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }
+  );
+  document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
