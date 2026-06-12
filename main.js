@@ -15,12 +15,12 @@ const messages = {
     },
     "hero": {
       "name": "Tansel KILIÇ",
-      "headline": "AI, fintech ve platform ekipleri için teknoloji liderliği.",
-      "subtitle": "Fintech, e-ticaret ve dijital ekosistemlerde 20+ yıldır mühendislik ekipleri, cloud-native platformlar ve üretime alınan AI girişimleri yönetiyorum.",
+      "headline": "Stratejik teknoloji liderliği ve executive AI danışmanlığı.",
+      "subtitle": "Fintech, e-ticaret ve dijital ekosistemlerde 20+ yıllık CTO ve mühendislik yönetimi deneyimiyle; stratejik belirsizlikleri, ölçülebilir iş etkisi yaratan çalışan sistemlere dönüştürüyorum.",
       "cta_primary": "İletişime geç",
       "cta_secondary": "Deneyimi gör",
       "title_line": "Teknoloji Yöneticisi",
-      "card_location": "İstanbul, Türkiye · Hibrit",
+      "card_location": "İstanbul, Türkiye",
       "card_langs": "Türkçe · İngilizce",
       "proof_1": "Fintech, e-ticaret ve dijital ekosistemlerde 20+ yıl",
       "proof_2": "50+ kişilik dağıtık mühendislik ekipleri yönetti",
@@ -39,19 +39,17 @@ const messages = {
     },
     "about": {
       "label": "Hakkımda",
-      "title": "Stratejik Teknoloji ve Mühendislik Yönetimi",
-      "subtitle": "İş hedeflerini mühendislik ölçeğiyle birleştiren, yapay zekâ çözümlerini deneysel aşamadan üretim sistemlerine taşıyan liderlik yaklaşımı.",
-      "deck_label": "Yönetici profili",
-      "deck_title": "Stratejiyi çalışan sistemlere dönüştürmek.",
-      "deck_desc": "Odak noktam, iş ve teknoloji tarafını aynı hedefte buluşturmak; doğru kullanım alanlarını tanımlayıp bunları üretime taşımak.",
-      "p1": "20+ yıldır fintech, e-ticaret ve dijital ekosistemlerde büyük ölçekli platformlar ve mühendislik organizasyonları yönetiyorum. 50+'lik dağıtık ekiplerle, milyonlarca kullanıcıyı destekleyen cloud-native mikroservis mimarileri kurdum.",
-      "p2": "Son yıllarda AI ve LLM girişimlerini deney değil, karar almayı güçlendiren ve operasyonu hızlandıran üretim sistemleri olarak hayata geçirdim.",
-      "p3": "İş ve yönetim paydaşlarıyla ölçülebilir etki yaratacak alanları belirliyor, kullanım senaryosu keşfinden devreye almaya kadar süreci yönetiyorum.",
-      "p4": "Teknik derinliği, sonuç odaklı ve pragmatik bir dönüşüm yaklaşımıyla birleştiriyorum.",
-      "principle_1": "İş öncelikli AI ve platform kararları",
-      "principle_2": "Dağıtık ekiplerde mühendislik liderliği",
-      "principle_3": "Ölçek için tasarlanmış cloud-native sistemler",
-      "principle_4": "Keşiften devreye almaya pragmatik teslimat"
+      "title": "Stratejinin uygulamayla buluştuğu yer.",
+      "subtitle": "Teknoloji organizasyonları kuruyor, yapay zekayı ölçeklenebilir şekilde devreye alıyorum. Stratejik belirsizlikleri, ölçülebilir iş etkisi yaratan çalışan sistemlere dönüştürüyorum.",
+      "col1_label": "Yapay Zeka",
+      "col1_title": "Üretim Seviyesinde AI",
+      "col1_desc": "Gerçek dünyada değer üreten AI sistemleri tasarlıyor ve hayata geçiriyorum — ilk günden itibaren uyumluluk, doğruluk ve ölçeklenebilirlik için tasarlanmış belge zekası platformları, dolandırıcılık tespit motorları ve LLM-native iş akışları.",
+      "col2_label": "Liderlik",
+      "col2_title": "Teknoloji Liderliği",
+      "col2_desc": "6 farklı şirkette CTO ve teknoloji direktörü olarak, 50+ kişilik mühendislik organizasyonları kurdum ve ölçeklendirdim — teknik yol haritalarını iş hedefleriyle uyumlu hale getirdim, yüksek baskı altında ve hızla teslim ettim.",
+      "col3_label": "Dönüşüm",
+      "col3_title": "Dijital Dönüşüm",
+      "col3_desc": "Milyonlarca kullanıcıya hizmet veren cloud-native mimarilerden legacy modernizasyonuna kadar — dönüşümü sunumlardan çıkarıp, bütçesinde ve zamanında çalışan ürünlere dönüştürüyorum."
     },
     "impact": {
       "label": "Etki",
@@ -105,34 +103,55 @@ const messages = {
     },
     "expertise": {
       "label": "Uzmanlık",
-      "title": "Temel Uzmanlık Alanları",
-      "subtitle": "Fintech altyapıları, bulut tabanlı mikroservisler ve yapay zekâ entegrasyonlarına yön veren teknik ve yönetsel yetkinlikler.",
-      "ai_title": "AI & LLM Dönüşümü",
-      "ai_desc": "Belge zekası, dolandırıcılık tespiti ve karar otomasyonu için üretim kalitesinde LLM sistemleri.",
-      "fintech_title": "Fintech & Ödeme Sistemleri",
-      "fintech_desc": "POS, Sanal POS, dijital cüzdan, AML ve finansal uyumluluk tarafında güçlü uygulama deneyimi.",
-      "cloud_title": "Cloud-Native Mimari",
-      "cloud_desc": "Azure ve GCP üzerinde 100+ servislik, yüksek trafikli mikroservis mimarileri.",
-      "security_title": "Güvenlik & Kriptografi",
-      "security_desc": "HSM entegrasyonları, mTLS, PKI ve kurumsal güvenlik mimarisi deneyimi.",
-      "leadership_title": "Mühendislik Liderliği",
-      "leadership_desc": "3x ekip büyütme, 50+ mühendis yönetimi ve ölçekli Agile operasyonu.",
-      "digital_title": "Dijital Dönüşüm",
-      "digital_desc": "Eski sistemleri modern ve ölçeklenebilir dijital platformlara dönüştürme deneyimi.",
-      "group_core": "Temel Alanlar",
-      "group_systems": "Sistemler",
-      "group_leadership": "Liderlik"
+      "title": "Stratejik Odak ve Uzmanlık Alanları",
+      "subtitle": "Yapay zekâ entegrasyonu, yüksek ölçekli fintech altyapıları ve teknoloji liderliğine yön veren temel yetkinlikler.",
+      "card1_label": "Yapay Zeka",
+      "card1_title": "Yapay Zekâ ve Makine Öğrenimi",
+      "card1_desc": "Model seçimi ve ince ayardan (fine-tuning) üretim ölçeğindeki çıkarım (inference) altyapısına kadar; kurumsal ölçekte doğru, uyumlu ve operasyonel olarak sürdürülebilir yapay zekâ sistemleri tasarlıyorum.",
+      "card1_list": [
+        "LLM entegrasyonu ve istem mühendisliği (prompt engineering)",
+        "RAG sistemleri ve belge zekası",
+        "NLP tabanlı dolandırıcılık ve anomali tespiti",
+        "On-premise ve özel (private) yapay zekâ kurulumları"
+      ],
+      "card2_label": "Liderlik",
+      "card2_title": "Teknoloji Liderliği",
+      "card2_desc": "Teslim eden, iş çıkaran mühendislik organizasyonları kuruyorum. Bu; doğru insanları işe almak, net teknik standartlar belirlemek ve bürokrasiye boğulmadan ölçeklenen hesap verebilirlik yapıları oluşturmak anlamına gelir.",
+      "card2_list": [
+        "CTO ve Mühendislikten Sorumlu Başkan Yardımcısı (VP) danışmanlığı",
+        "Mühendislik ekibi ölçeklendirme (10'dan 50+'ye)",
+        "Teknik yol haritası ve OKR hizalaması",
+        "Yüksek baskı altında ve hızla çapraz fonksiyonel yürütme"
+      ],
+      "card3_label": "Dönüşüm",
+      "card3_title": "Dijital Dönüşüm",
+      "card3_desc": "Karmaşık dönüşümler teknik katmanda değil, organizasyonel katmanda başarısız olur. Ben her ikisini de yönetiyorum — iş sürekliliğini korurken legacy modernizasyonu, bulut göçü ve ekiplerin yeniden beceri kazanması.",
+      "card3_list": [
+        "Bulut tabanlı mimari (AWS, Azure, GCP)",
+        "Platform mühendisliği ve mikroservisler",
+        "Çevik (Agile) ve DevOps pratiklerinin benimsenmesi",
+        "Birleşme ve Satın Alma (M&A) teknoloji entegrasyonu"
+      ],
+      "card4_label": "Sektör",
+      "card4_title": "Fintech ve Düzenlenmiş Sektörler",
+      "card4_desc": "Ödemeler, dijital cüzdanlar, kripto saklama — güvenlik açıklarının ve uyumluluk eksikliklerinin doğrudan yasal sonuçları olduğu sektörler. Kısıtlamaları anlıyor ve bu kısıtlamalar içinde hızla sistem inşa etmeyi biliyorum.",
+      "card4_list": [
+        "Ödeme geçidi ve POS altyapısı",
+        "Blockchain ve dijital varlık saklama",
+        "HSM entegrasyonu ve kriptografik protokoller",
+        "Regülasyon ve uyumluluk mimarisi"
+      ]
     },
     "contact": {
       "label": "İletişim",
       "title": "İletişim & İş Birliği",
-      "desc": "AI dönüşümü, fintech platformları veya yüksek ölçekli organizasyonel yapılanmalar için doğrudan temas kurabilirsiniz.",
+      "desc": "Yönetici seviyesinde AI danışmanlığı, fractional CTO ihtiyaçları veya stratejik teknoloji yol haritaları için doğrudan iletişime geçebilirsiniz.",
       "linkedin": "LinkedIn",
       "linkedin_sub": "tanselkilic",
       "email": "E-posta",
       "email_sub": "Mesaj gönder",
       "location": "İstanbul, Türkiye",
-      "location_sub": "Uzaktan çalışmaya açık",
+      "location_sub": "",
       "signal_1_title": "AI",
       "signal_1_sub": "Dönüşüm",
       "signal_2_title": "Fintech",
@@ -162,12 +181,12 @@ const messages = {
     },
     "hero": {
       "name": "Tansel KILIÇ",
-      "headline": "Technology leadership for AI, fintech, and platform teams.",
-      "subtitle": "20+ years leading engineering teams, cloud-native platforms, and AI initiatives in production across fintech, e-commerce, and digital ecosystems.",
+      "headline": "Strategic technology leadership and executive AI advisory.",
+      "subtitle": "With 20+ years of CTO and engineering management experience across fintech, e-commerce, and digital ecosystems, I turn strategic ambiguity into shipped systems with measurable business impact.",
       "cta_primary": "Get in touch",
       "cta_secondary": "View experience",
       "title_line": "Technology Executive",
-      "card_location": "Istanbul, Turkey · Hybrid",
+      "card_location": "Istanbul, Turkey",
       "card_langs": "Turkish · English",
       "proof_1": "20+ years across fintech, e-commerce and digital ecosystems",
       "proof_2": "Led distributed engineering teams of 50+ members",
@@ -186,19 +205,17 @@ const messages = {
     },
     "about": {
       "label": "About",
-      "title": "Strategic Technology & Engineering Leadership",
-      "subtitle": "Bridging business vision with engineering scale to transform AI initiatives into robust production systems.",
-      "deck_label": "Executive profile",
-      "deck_title": "Turning strategy into working systems.",
-      "deck_desc": "My focus is to align business and technology, define the right use cases, and move them into production with the right teams.",
-      "p1": "For 20+ years, I have led large-scale platforms and engineering organizations across fintech, e-commerce, and digital ecosystems. I have built and led distributed teams of 50+ engineers, delivering cloud-native microservices that support millions of users.",
-      "p2": "In recent years, I have led AI and LLM initiatives not as experiments, but as production systems that improve decisions and streamline operations.",
-      "p3": "I work with business and executive stakeholders to identify high-impact opportunities and lead the full path from use case discovery to rollout.",
-      "p4": "I combine technical depth with a pragmatic, results-focused approach to digital transformation.",
-      "principle_1": "Business-first AI and platform decisions",
-      "principle_2": "Engineering leadership across distributed teams",
-      "principle_3": "Cloud-native systems designed for scale",
-      "principle_4": "Pragmatic delivery from discovery to rollout"
+      "title": "Where strategy meets execution.",
+      "subtitle": "I build technology organizations and deploy AI at scale — turning strategic ambiguity into shipped systems with measurable business impact.",
+      "col1_label": "Artificial Intelligence",
+      "col1_title": "AI in Production",
+      "col1_desc": "I design and deliver AI systems that operate in the real world — document intelligence platforms, fraud detection engines, and LLM-native workflows built for compliance, accuracy, and scale from day one.",
+      "col2_label": "Leadership",
+      "col2_title": "Technology Leadership",
+      "col2_desc": "As CTO across six companies, I have built and scaled engineering organizations of 50+ — aligning technical roadmaps with business objectives, under pressure and at pace.",
+      "col3_label": "Transformation",
+      "col3_title": "Digital Transformation",
+      "col3_desc": "From legacy modernization to cloud-native architectures serving millions of users — I move transformation from slide decks to shipped products, within budget and on schedule."
     },
     "impact": {
       "label": "Impact",
@@ -252,34 +269,55 @@ const messages = {
     },
     "expertise": {
       "label": "Expertise",
-      "title": "Core Expertise & Capabilities",
-      "subtitle": "Strategic focus areas spanning AI integration, cloud-native platforms, regulated fintech ecosystems, and engineering management.",
-      "ai_title": "AI & LLM Transformation",
-      "ai_desc": "Production-grade LLM systems for document intelligence, fraud detection, and decision automation.",
-      "fintech_title": "Fintech & Payment Systems",
-      "fintech_desc": "Strong hands-on experience across POS, virtual POS, digital wallets, AML, and financial compliance.",
-      "cloud_title": "Cloud-Native Architecture",
-      "cloud_desc": "High-traffic microservice architectures on Azure and GCP, with 100+ services in operation.",
-      "security_title": "Security & Cryptography",
-      "security_desc": "Experience with HSM integrations, mTLS, PKI, and enterprise security architecture.",
-      "leadership_title": "Engineering Leadership",
-      "leadership_desc": "3x team growth, leadership of 50+ engineers, and Agile operations at scale.",
-      "digital_title": "Digital Transformation",
-      "digital_desc": "Experience modernizing legacy systems into scalable digital platforms.",
-      "group_core": "Core",
-      "group_systems": "Systems",
-      "group_leadership": "Leadership"
+      "title": "Strategic Focus & Areas of Expertise",
+      "subtitle": "Core capabilities spanning enterprise AI integration, high-scale fintech architectures, and digital transformation leadership.",
+      "card1_label": "Artificial Intelligence",
+      "card1_title": "AI & Machine Learning",
+      "card1_desc": "From model selection and fine-tuning to production inference infrastructure — I design AI systems that are accurate, compliant, and operationally maintainable at enterprise scale.",
+      "card1_list": [
+        "LLM integration & prompt engineering",
+        "RAG systems & document intelligence",
+        "NLP-based fraud and anomaly detection",
+        "On-premise and private AI deployment"
+      ],
+      "card2_label": "Leadership",
+      "card2_title": "Technology Leadership",
+      "card2_desc": "I build engineering organizations that ship. That means hiring the right people, establishing clear technical standards, and creating accountability structures that scale without bureaucracy.",
+      "card2_list": [
+        "CTO and VP Engineering advisory",
+        "Engineering team scaling (10 → 50+)",
+        "Technical roadmap and OKR alignment",
+        "Cross-functional execution under pressure"
+      ],
+      "card3_label": "Transformation",
+      "card3_title": "Digital Transformation",
+      "card3_desc": "Complex transformations fail at the organizational layer, not the technical one. I manage both — legacy modernization, cloud migration, and team re-skilling — while keeping the business running throughout.",
+      "card3_list": [
+        "Cloud-native architecture (AWS, Azure, GCP)",
+        "Platform engineering & microservices",
+        "Agile and DevOps practice adoption",
+        "M&A technology integration"
+      ],
+      "card4_label": "Domain",
+      "card4_title": "Fintech & Regulated Industries",
+      "card4_desc": "Payments, digital wallets, crypto custody — industries where security failures and compliance gaps have direct legal consequences. I understand the constraints and know how to build within them at speed.",
+      "card4_list": [
+        "Payment gateway and POS infrastructure",
+        "Blockchain and digital asset custody",
+        "HSM integration and cryptographic protocols",
+        "Regulatory compliance architecture"
+      ]
     },
     "contact": {
       "label": "Contact",
       "title": "Let's Connect & Collaborate",
-      "desc": "Reach out directly to discuss enterprise AI strategies, fintech architecture, or engineering organization design.",
+      "desc": "Reach out directly for executive AI advisory, fractional CTO engagements, or strategic technology roadmap consulting.",
       "linkedin": "LinkedIn",
       "linkedin_sub": "tanselkilic",
       "email": "Email",
       "email_sub": "Send a message",
       "location": "Istanbul, Turkey",
-      "location_sub": "Open to remote",
+      "location_sub": "",
       "signal_1_title": "AI",
       "signal_1_sub": "Transformation",
       "signal_2_title": "Fintech",
@@ -469,9 +507,9 @@ const experiences = [
 
 function readStoredLocale() {
   try {
-    return localStorage.getItem('locale') === 'en' ? 'en' : 'tr';
+    return localStorage.getItem('locale') === 'tr' ? 'tr' : 'en';
   } catch {
-    return 'tr';
+    return 'en';
   }
 }
 
@@ -616,8 +654,7 @@ function renderHero(locale) {
   return `<section id='hero' class='hero-section executive-shell'>
     <div class='section-shell hero-grid'>
       <div class='reveal'>
-        <h1 class='hero-title'>${escapeHtml(t.name)}</h1>
-        <div class='hero-headline'>${escapeHtml(t.headline)}</div>
+        <h1 class='hero-headline'>${escapeHtml(t.headline)}</h1>
         <p class='hero-subtitle'>${escapeHtml(t.subtitle)}</p>
         <div class='hero-actions'>
           <a class='btn-primary' href='#contact'>${escapeHtml(t.cta_primary)} ${iconArrowUpRight(15)}</a>
@@ -655,27 +692,25 @@ function renderHero(locale) {
 
 function renderAbout(locale) {
   const a = getText(locale).about;
+  const pillars = [
+    { label: a.col1_label, title: a.col1_title, desc: a.col1_desc },
+    { label: a.col2_label, title: a.col2_title, desc: a.col2_desc },
+    { label: a.col3_label, title: a.col3_title, desc: a.col3_desc }
+  ];
+
   return `<section id='about' class='section-paper section-border-y section-padded'>
     <div class='section-shell'>
       <div class='reveal'>
         ${renderSectionHeader({ label: a.label, title: a.title, description: a.subtitle, descriptionClass: 'section-description' })}
       </div>
-      <div class='about-layout'>
-        <div class='reveal' style='transition-delay: 0.05s'>
-          <div class='about-deck-title'>${escapeHtml(a.deck_title)}</div>
-          <div class='about-paragraphs'>
-            <p>${escapeHtml(a.p1)}</p>
-            <p>${escapeHtml(a.p2)}</p>
+      <div class='about-grid'>
+        ${pillars.map((p, index) => `
+          <div class='about-col reveal' style='transition-delay: ${0.05 + index * 0.05}s'>
+            <div class='about-col-label'>${escapeHtml(p.label)}</div>
+            <h3 class='about-col-title'>${escapeHtml(p.title)}</h3>
+            <p class='about-col-desc'>${escapeHtml(p.desc)}</p>
           </div>
-        </div>
-        <div class='about-aside'>
-          <div class='about-principles'>
-            <div class='principle-item reveal' style='transition-delay: 0.1s'><div class='principle-text'>${escapeHtml(a.principle_1)}</div></div>
-            <div class='principle-item reveal' style='transition-delay: 0.15s'><div class='principle-text'>${escapeHtml(a.principle_2)}</div></div>
-            <div class='principle-item reveal' style='transition-delay: 0.2s'><div class='principle-text'>${escapeHtml(a.principle_3)}</div></div>
-            <div class='principle-item reveal' style='transition-delay: 0.25s'><div class='principle-text'>${escapeHtml(a.principle_4)}</div></div>
-          </div>
-        </div>
+        `).join('')}
       </div>
     </div>
   </section>`;
@@ -741,10 +776,11 @@ function renderExperience(locale) {
 
 function renderExpertise(locale) {
   const e = getText(locale).expertise;
-  const groups = [
-    { titleKey: 'group_core', items: [['ai_title', 'ai_desc'], ['fintech_title', 'fintech_desc']] },
-    { titleKey: 'group_systems', items: [['cloud_title', 'cloud_desc'], ['security_title', 'security_desc']] },
-    { titleKey: 'group_leadership', items: [['leadership_title', 'leadership_desc'], ['digital_title', 'digital_desc']] }
+  const cards = [
+    { label: e.card1_label, title: e.card1_title, desc: e.card1_desc, list: e.card1_list },
+    { label: e.card2_label, title: e.card2_title, desc: e.card2_desc, list: e.card2_list },
+    { label: e.card3_label, title: e.card3_title, desc: e.card3_desc, list: e.card3_list },
+    { label: e.card4_label, title: e.card4_title, desc: e.card4_desc, list: e.card4_list }
   ];
 
   return `<section id='expertise' class='section-paper section-padded'>
@@ -752,18 +788,17 @@ function renderExpertise(locale) {
       <div class='reveal'>
         ${renderSectionHeader({ label: e.label, title: e.title, description: e.subtitle, descriptionClass: 'section-description' })}
       </div>
-      <div class='expertise-layout'>
-        <div style='border-top:1px solid #e5e7eb;'>
-          ${groups.map((group, index) => `<div class='expertise-group reveal' style='transition-delay: ${index * 0.05}s'>
-            <div class='expertise-group-label'>${escapeHtml(e[group.titleKey])}</div>
-            <div class='expertise-group-items'>
-              ${group.items.map(([titleKey, descKey], idx) => `<article class='expertise-item'>
-                <h3>${escapeHtml(e[titleKey])}</h3>
-                <p class='expertise-desc${idx > 0 ? ' mobile-hidden' : ''}'>${escapeHtml(e[descKey])}</p>
-              </article>`).join('')}
-            </div>
-          </div>`).join('')}
-        </div>
+      <div class='expertise-grid'>
+        ${cards.map((c, index) => `
+          <div class='expertise-card reveal' style='transition-delay: ${0.05 + index * 0.05}s'>
+            <div class='expertise-card-label'>${escapeHtml(c.label)}</div>
+            <h3 class='expertise-card-title'>${escapeHtml(c.title)}</h3>
+            <p class='expertise-card-desc'>${escapeHtml(c.desc)}</p>
+            <ul class='expertise-card-list'>
+              ${c.list.map(item => `<li>${escapeHtml(item)}</li>`).join('')}
+            </ul>
+          </div>
+        `).join('')}
       </div>
     </div>
   </section>`;
@@ -861,7 +896,7 @@ function renderContact(locale) {
             <div class='contact-icon'>${item.icon}</div>
             <div>
               <div class='contact-label'>${escapeHtml(item.label)}</div>
-              <div class='contact-sub'>${escapeHtml(item.sub)}</div>
+              ${item.sub ? `<div class='contact-sub'>${escapeHtml(item.sub)}</div>` : ''}
             </div>
             ${item.href ? `<span class='contact-arrow'>${iconArrowUpRight(16)}</span>` : ''}
           </div>`;

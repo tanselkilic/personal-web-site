@@ -582,7 +582,6 @@ section {
   color: var(--color-slate-600);
 }
 
-.about-layout,
 .expertise-layout,
 .responsible-layout,
 .contact-layout {
@@ -593,23 +592,47 @@ section {
   padding-top: 1.5rem;
 }
 
-.about-deck-title {
-  max-width: 48rem;
-  margin: 0 0 1rem;
-  font-size: clamp(1.25rem, 3vw, 1.45rem);
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 2rem;
+}
+
+.about-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-col-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-slate-500);
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 1rem;
+}
+
+.about-col-title {
+  font-family: 'Newsreader', serif;
+  font-size: 1.35rem;
   font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -0.03em;
+  line-height: 1.25;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
   color: var(--color-slate-900);
 }
 
-.about-paragraphs {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+.about-col-desc {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: var(--color-slate-600);
+  margin: 0;
 }
 
-.about-paragraphs p,
 .responsible-desc,
 .contact-desc,
 .experience-desc,
@@ -620,7 +643,6 @@ section {
   margin: 0;
 }
 
-.about-paragraphs p,
 .responsible-desc,
 .contact-desc,
 .experience-desc,
@@ -632,7 +654,6 @@ section {
   color: var(--color-slate-600);
 }
 
-.about-principles,
 .responsible-principles,
 .expertise-group-items,
 .education-list,
@@ -642,7 +663,6 @@ section {
   gap: 0;
 }
 
-.principle-item,
 .responsible-project,
 .education-item,
 .experience-selected-item,
@@ -652,20 +672,12 @@ section {
   padding-block: 0.875rem;
 }
 
-.principle-item:last-child,
 .responsible-project:last-child,
 .education-item:last-child,
 .experience-selected-item:last-child,
 .experience-earlier-item:last-child,
 .contact-item:last-child {
   border-bottom: 0;
-}
-
-.principle-text {
-  font-size: 0.9375rem;
-  font-weight: 600;
-  line-height: 1.35;
-  color: var(--color-slate-700);
 }
 
 .experience-grid {
@@ -815,38 +827,83 @@ section {
   color: var(--color-slate-600);
 }
 
-.expertise-group {
+.expertise-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.75rem;
-  padding-block: 1rem;
-  border-bottom: 1px solid #e5e7eb;
+  gap: 2.5rem;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 2.5rem;
+  margin-top: 1.5rem;
 }
 
-.expertise-group:last-child {
-  border-bottom: 0;
+.expertise-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 1.5rem;
 }
 
-.expertise-group-label {
+.expertise-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3rem;
+  height: 1px;
+  background: #cbd5e1;
+}
+
+.expertise-card-label {
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.26em;
-  color: var(--color-slate-600);
+  letter-spacing: 0.18em;
+  color: var(--color-slate-500);
+  margin-bottom: 0.5rem;
 }
 
-.expertise-group-items {
-  gap: 1rem;
-}
-
-.expertise-item h3 {
-  margin-bottom: 0.35rem;
-  font-size: 1rem;
+.expertise-card-title {
+  font-family: 'Newsreader', serif;
+  font-size: 1.35rem;
   font-weight: 600;
-  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--color-slate-900);
 }
 
-.expertise-desc,
+.expertise-card-desc {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: var(--color-slate-600);
+  margin: 0;
+}
+
+.expertise-card-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.expertise-card-list li {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--color-slate-500);
+  padding-left: 0.875rem;
+  position: relative;
+}
+
+.expertise-card-list li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--color-slate-400);
+  font-weight: bold;
+}
+
 .responsible-desc,
 .contact-desc,
 .education-sub,
@@ -1157,27 +1214,20 @@ section {
     margin-bottom: 2.25rem;
   }
 
-  .about-layout,
-  .expertise-layout,
   .responsible-layout,
   .contact-layout,
   .experience-grid {
     gap: 2rem;
   }
 
-  .about-paragraphs {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.75rem;
+  .about-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2.5rem;
   }
 
-  .expertise-group {
-    grid-template-columns: 0.18fr 0.82fr;
-    gap: 2rem;
-  }
-
-  .expertise-group-items {
+  .expertise-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.25rem;
+    gap: 3rem 2.5rem;
   }
 
   .responsible-layout {
@@ -1231,21 +1281,10 @@ section {
     padding-left: 2rem;
   }
 
-  .about-layout {
-    grid-template-columns: 0.72fr 0.28fr;
-    gap: 2rem;
-  }
 
-  .about-aside {
-    border-top: 0;
-    border-left: 1px solid #e5e7eb;
-    padding-top: 0;
-    padding-left: 1.75rem;
-  }
 
-  .expertise-group-items {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+
+
 
   .education-item {
     gap: 2rem;
